@@ -7,5 +7,6 @@ import org.springframework.boot.runApplication
 class SpringBootPracticeApplication
 
 fun main(args: Array<String>) {
+	println("DATABASE_URI: " + System.getenv("MONGODB_CONNECTION"))
 	runApplication<SpringBootPracticeApplication>(*args)
 }
